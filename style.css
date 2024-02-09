@@ -1,6 +1,9 @@
 body {
     display: block;
     margin: 8px;
+    margin-left: 50px;
+    margin-top: 35px;
+    background-color: rgb(255, 255, 255);
 }
 
 h1 {
@@ -15,14 +18,13 @@ h1 {
     color: #78866b;
 }
 
-body {
-    margin-left: 50px;
-    margin-top: 35px;
-    background-color: rgb(255, 255, 255);
-}
 
 h2{
     color: #534a48;
+}
+
+a{
+    line-height: 1.8;
 }
 
 .lorena {
@@ -33,8 +35,19 @@ h2{
 }
 
 .link {
-    font-family: sans-serif;
+    font-family: 'casad-serial-regular';
     font-size: 25px;
     color: #534a48;
+    line-height: 130%;
+    width: fit-content;
     text-decoration: none;
+}
+
+.link:hover{
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 46px;
+    text-decoration: underline;
+    transition: 60ms ease-in-out;
 }

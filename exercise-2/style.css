@@ -1,0 +1,40 @@
+@font-face {
+    font-family:SpookyGhoster;
+    src: url('spooky-ghoster.regular.otf');
+  }
+
+body {
+    font-family:SpookyGhoster;
+    color:#e1ddd0;
+    background-color:#1a2338;
+    font-size:20px;
+    letter-spacing: 0.5px;
+  }
+
+h1{
+    font-size: 50px;
+}
+
+h3{
+    text-decoration: underline;
+    letter-spacing: 0.5px;
+}
+
+.red{
+    color:#8a0904;
+}
+
+.red:hover{
+    font-size: 50px;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.supereasy:hover{
+    text-decoration: line-through;
+    color:#8a0904;
+}
+
+h1, h2, p{
+    text-align: center;
+}
