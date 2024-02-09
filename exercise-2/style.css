@@ -30,9 +30,13 @@ h3{
     transition-timing-function: linear;
 }
 
+h3, .letterspace:hover{
+    letter-spacing: 5px;
+    transition-duration: 5s;
+}
+
 .supereasy:hover{
     text-decoration: line-through;
-    color:#8a0904;
 }
 
 h1, h2, p{
