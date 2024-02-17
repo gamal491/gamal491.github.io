@@ -1,35 +1,64 @@
+@font-face {
+    font-family:Ogg;
+    src: url('Ogg-Bold-BF646c18fc4aa63.otf');
+  }
+
 body {
     display: block;
-    margin: 8px;
-    margin-top: 100px;
     background-color: #F8F4E9;
     font-family: 'Libre Baskerville', serif;
+    font-size:1.5vw;
+}
+
+p{
+    position: relative;
+    color: #000;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width:50%;
+    height:100%;
+    left:50%;
 }
 
 h1 {
     display: block;
-    font-size: 5em;
     font-weight: bold;
+    font-size: 8vw;
 }
-
 
 h4{
+    position: relative;
+    color: #000;
+    font-family: "Helvetica Neue";
+    font-style: normal;
     font-weight: medium;
+    line-height: normal;
+    font-size:1.5vw;
 }
 
-h1, h4, p{
+h1, h3, h4{
     text-align: center;
 }
 
-.question-times{
-    font-size:400px;
-    font-family:'Times New Roman', Times, serif;
+ .punctuation{
+    width: 40vw;
+    position:relative;
+    margin:200px;
+    transform: -20%,-50%;
+} 
+.wrapper {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
-.question-helvetica{
-    font-size:400px;
-    font-family:Helvetica;
+.arrowright{
+    font-size: 5vh;
+    text-align: right;
 }
-.question-courier{
-    font-size:400px;
-    font-family:'Courier New', Courier, monospace;
+.arrowleft{
+    font-size: 5vh;
+    text-align: left;
 }

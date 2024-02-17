@@ -15,12 +15,14 @@ h1 {
     margin-inline-end: 0px;
     font-weight: bold;
     font-family: "casad-serial-regular";
+    font-family: "roca";
     color: #78866b;
 }
 
 
 h2{
     color: #534a48;
+    font-family: "roca";
 }
 
 a{
@@ -29,13 +31,12 @@ a{
 
 .lorena {
     width: 100%;
-    font-style: italic;
-    font-size: 32px;
+    font-size: 40px;
     align-content: center;
 }
 
 .link {
-    font-family: 'casad-serial-regular';
+    font-family: 'roca';
     font-size: 25px;
     color: #534a48;
     line-height: 130%;
