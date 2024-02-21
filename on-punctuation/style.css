@@ -9,6 +9,36 @@ body {
     font-family: 'Libre Baskerville', serif;
     font-size:1.5vw;
 }
+span{
+    color:#F8F4E9;
+}
+
+a.italicize:hover{
+    font-style:italic;
+    font-size: larger;
+    font-family: 'Libre Baskerville', serif;
+}
+
+span:hover{ 
+    color:black;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+h3 a:hover{
+    text-decoration:underline;
+    color: #3B8D50;
+    font-style:italic;
+}
+
+#text-reveal{
+    display:none;
+}
+
+#punctuation-show{
+    display:none;
+}
 
 p{
     position: relative;
@@ -42,11 +72,10 @@ h1, h3, h4{
     text-align: center;
 }
 
- .punctuation{
+.punctuation{
     width: 40vw;
     position:relative;
-    margin:200px;
-    transform: -20%,-50%;
+    margin:200px auto;
 } 
 .wrapper {
     margin-left: 10vw;
@@ -54,11 +83,21 @@ h1, h3, h4{
     margin-top: 10vh;
     margin-bottom: 10vh;
 }
-.arrowright{
+.image{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /* text-align: left; */
+    transform: translateX(-1000px)
+}
+
+p.arrowright{
     font-size: 5vh;
     text-align: right;
+    transform: scale(.7,.7);
+    transform:translateX(10px);
 }
-.arrowleft{
+p.arrowleft{
     font-size: 5vh;
     text-align: left;
 }
