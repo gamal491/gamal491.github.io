@@ -13,15 +13,28 @@ span{
     color:#F8F4E9;
 }
 
+.yellow{
+    color:#FFCC1999;
+    font-family: Ogg;
+    text-decoration:underline;
+}
+
 a.italicize:hover{
     font-style:italic;
     font-size: larger;
-    font-family: 'Libre Baskerville', serif;
+    font-family: Ogg;
+    color:#FFCC1999;
 }
 
+span.question{
+    margin: 20px 20px 20px 20px;
+}
 span:hover{ 
     color:black;
+    font-weight: 900;
+    font-size:larger;
 }
+
 a{
     text-decoration: none;
     color:black;
