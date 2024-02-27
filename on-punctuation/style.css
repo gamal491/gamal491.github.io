@@ -113,9 +113,16 @@ h3 a:hover{
 #punctuation-show{
     display:none;
 }
+
 .punctuation:hover{
     border: 10px solid #3B8D50;
 }
+
+.punctuation{
+    width: clamp(100px, 60vw, 600px);
+    position:relative;
+    margin:200px auto;
+} 
 
 p{
     position: relative;
@@ -152,11 +159,6 @@ h1, h3, h4, p.middle{
    margin: auto;
 }
 
-.punctuation{
-    width: clamp(100px, 60vw, 600px);
-    position:relative;
-    margin:200px auto;
-} 
 /* .punctuation-colon{
     width: clamp(100px, 60vw, 600px);
     position:relative;
@@ -210,22 +212,24 @@ h1, h3, h4, p.middle{
 
 .image{
     position: absolute;
-    width: 50%;
-    height:100%;
-    transform:scale(10px);
+    width: 50% !important;
+    height:100% !important;
+    /* transform:scale(10px); */
     transform:translateX(-100px);
     top:-10px;
     animation: tilt-shaking 0.5s infinite;
 }
 .img-colon{
     margin-right: 0px;
-    margin-left: -169px;
-    margin-top: -130px;
+    margin-left: -199px;
+    margin-top: -60px;
 }
+
 .img-semicolon{
     margin-left: 80px;
     margin-top: -70px;
 }
+
 .img-exclamation{
     margin-top: -85px;
 }
@@ -310,7 +314,7 @@ p.arrowleft{
         margin-left: 15vw;
         margin-right: 15vw;
         margin-top: 0vh;
-        margin-bottom: 0vh; */
+        margin-bottom: 0vh; 
     }
     .rightwrapper {
         margin-left: 10vw;
@@ -323,12 +327,6 @@ p.arrowleft{
         margin-right: 10vw;
         margin-top: 10vh;
         margin-bottom: 10vh;
-    }
-    .image{
-        position: relative;
-        max-width:100%;
-        height:100%; 
-        left:180px;
     }
     .lefttxt{
         max-width: 60vw;
@@ -351,14 +349,28 @@ p.arrowleft{
         margin-top: 0vh;
         margin-bottom: 0vh;
     }
+    .image{
+        position: relative;
+        max-width:100%;
+        height:100%; 
+        left:180px;
+    }
+
     .img-colon{
         margin-top:5px;
-        margin-left:-9px;
+        margin-left:0px;
+        /* left:180px;
+        transform:scale(200px); */
     }
     .img-semicolon{
-        margin-left:-120px;
+        margin-left:-80px;
     }
     .img-exclamation{
         margin-top: -1px;
     }
+    .punctuation{
+        width: clamp(100px, 60vw, 600px);
+        position:relative;
+        margin:30px auto;
+    } 
 }
