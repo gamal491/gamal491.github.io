@@ -75,6 +75,7 @@ a{
         font-size: 3.5rem;
     }
     h2{color:#E94F37;
+        text-align:center;
     }
     .link:hover{
         color:#44BBA4;
