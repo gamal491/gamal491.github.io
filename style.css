@@ -60,7 +60,7 @@ a{
     color:#DF8877;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
     body{
         background-color: #F6F7EB;
         margin-left: 30px;
