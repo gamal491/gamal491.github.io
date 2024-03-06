@@ -1,0 +1,50 @@
+body{
+    background-color:#880808;
+}
+
+#container{
+    display:flex;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.letter{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right:30px;
+}
+.cell{
+    width:30px;
+    height:30px;
+}
+
+.r, .e, .d, .t{
+    width:120px;
+}
+
+.t{
+     display: none;   
+}
+
+.fill{
+    background-color: red;
+}
+
+#container:hover{
+    .fill{
+        background-color: blue;}
+
+    .blue{
+        opacity: 0;
+    }   
+    .show{
+        background-color: blue; 
+    }
+    .t{
+        display: flex;
+    }
+ }
+ body:hover{
+    background-color: #191970; 
+ }
