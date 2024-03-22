@@ -1,0 +1,27 @@
+body{
+    background-color:#820933;
+    margin-top: 200px;
+    margin-left: 70px;
+}
+
+#myDiv {
+    font-size: 4vw;
+    color: #FF4F58;
+  }
+
+#noun1, #noun2, #noun3,{
+    text-decoration: underline;
+}
+
+#adj1, #adj2, #adj3, #noun4{
+    font-style:oblique;
+    color:#a5a5a5;
+}
+
+p{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    position:relative;
+    left:47%;
+}
