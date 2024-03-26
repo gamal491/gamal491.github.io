@@ -1,30 +1,44 @@
-.row1{
+/* @font-face {
+    font-family: LicensePlate;
+    src: url('https://www.fontsaddict.com/fontface/license-plate.ttf');
+  } */
+  
+.title{
+    text-align: center;
+}
+
+h1{
+    font-family: 'LICENSE PLATE USA', sans-serif; 
+    font-size:3.5vw;                                    
+}
+
+.row{
     display: flex;
-    background-color: orange;
     width:100%;
     height: 100%;
-    padding: 10px;
-    gap:10px;
+    /* padding: 10px; */
+    /* gap:10px; */
 }
-.row2{
-    display: flex;
-    background-color: yellow;
-    width:100%;
-    height: 100%;
-    padding: 10px;
-    gap:10px;
-}
+
 .image{
     /* position: relative; */
-    width: 33vw;
+    width: 32vw;
     height: 100%;
+    margin: 1vw;
+    cursor: pointer;
   }
+.image:hover{
+  vertical-align:middle;
+  text-align:center;
+  width: 35vw;
+  -webkit-filter: saturate(1.5); 
+}
+
 .grid {
+    align-items: center;
     display: flex;
-    background-color: rosybrown;
-    flex-flow: row wrap;
+    justify-content: center;
+    flex-wrap:wrap;
     margin-top: 110px;
-    margin-left: 0px;
-    margin-right: 0px;
     width: 100%;
 }
