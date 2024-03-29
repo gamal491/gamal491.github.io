@@ -153,12 +153,3 @@ w.style.color=lettercolor[Math.floor(Math.random() * lettercolor.length)]; ;
 x.style.color=lettercolor[Math.floor(Math.random() * lettercolor.length)]; ; 
 y.style.color=lettercolor[Math.floor(Math.random() * lettercolor.length)]; ; 
 
-// // firstSquare.style.width="50px";
-// firstSquare.style.height= [Math.floor(Math.random() * 160)] + "px";
-// firstSquare.style.width=[randomSize] + "px";
-// secondSquare.style.width=[Math.floor(Math.random() * 160)] + "px";
-// thirdSquare.style.height=[Math.floor(Math.random() * 160)] + "px";
-// fourthSquare.style.height=[Math.floor(Math.random() * 160)] + "px";
-// fifthSquare.style.height=[Math.floor(Math.random() * 160)] + "px";
-// //trying out template literals
-// fifthSquare.style.width= `${randomSize}px`;
