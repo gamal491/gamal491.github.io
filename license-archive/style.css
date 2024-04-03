@@ -1,15 +1,40 @@
-/* @font-face {
-    font-family: LicensePlate;
-    src: url('https://www.fontsaddict.com/fontface/license-plate.ttf');
-  } */
-  
+/* @media all and (min-width: 1621px) {  */
+
+body{
+    background-color: #EBEBEB;
+    margin:0px;
+  }
+
 .title{
-    text-align: center;
+    display:flex;
+    justify-content:space-between;
+    flex-shrink: 0;
+    
 }
 
 h1{
     font-family: 'LICENSE PLATE USA', sans-serif; 
-    font-size:3.5vw;                                    
+    width:300px;
+    font-size:60px;   
+    margin-left: 0.67em;
+    margin-right: 0.67em;
+    display:flex;                                
+}
+
+a{
+  font-family: 'LICENSE PLATE USA', sans-serif; 
+  font-size:60px;  
+  margin: 0.67em;
+  display:flex;
+}
+
+a:visited{
+  color:black;
+}
+
+hr {
+  height: 2px;
+  background: black;
 }
 
 .row{
@@ -24,7 +49,6 @@ h1{
     /* position: relative; */
     width: 32vw;
     height: 100%;
-    margin: 1vw;
     cursor: pointer;
   }
 .image:hover{
@@ -41,4 +65,5 @@ h1{
     flex-wrap:wrap;
     margin-top: 110px;
     width: 100%;
+}
 }
