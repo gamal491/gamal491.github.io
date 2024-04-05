@@ -4,14 +4,13 @@ body{
     background-color: #EBEBEB;
     margin:0px;
   }
-
+/*LICENSE PLATE ARCHIVE*/
 .title{
     display:flex;
     justify-content:space-between;
     flex-shrink: 0;
     
 }
-
 h1{
     font-family: 'LICENSE PLATE USA', sans-serif; 
     width:300px;
@@ -26,36 +25,70 @@ a{
   font-size:60px;  
   margin: 0.67em;
   display:flex;
+  text-decoration:none;  
 }
+/*ABOUT PAGE*/
+
+#logo{
+  display:flex;
+  font-family: 'LICENSE PLATE USA', sans-serif; 
+  font-size:25px; 
+  text-decoration:none;  
+  width:100px;
+  margin-left: 0.67em;
+  margin-right: 0.67em;
+}
+
+p{
+  color: #000;
+  font-family: "Tilt Neon";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-items: center;
+  justify-content: center;
+  flex-wrap:wrap;
+  margin-left: 0.67em;
+  margin-right: 0.67em;
+}
+
+/*back to main page*/
 
 a:visited{
   color:black;
 }
 
+a:hover{
+  text-decoration: underline;
+}
+/*big about page title*/
+#about{
+  text-decoration: none;
+}
+
 hr {
   height: 2px;
   background: black;
+  width:100%;
 }
 
-.row{
-    display: flex;
-    width:100%;
-    height: 100%;
-    /* padding: 10px; */
-    /* gap:10px; */
+.textbox{
+  margin-left: 0.67em;
+  margin-right: 0.67em;
 }
 
 .image{
     /* position: relative; */
-    width: 32vw;
+    width: 50vw;
     height: 100%;
     cursor: pointer;
   }
 .image:hover{
   vertical-align:middle;
   text-align:center;
-  width: 35vw;
-  -webkit-filter: saturate(1.5); 
+  /* width: 60vw; */
+  /* -webkit-filter: saturate(1.5);  */
 }
 
 .grid {
@@ -63,7 +96,39 @@ hr {
     display: flex;
     justify-content: center;
     flex-wrap:wrap;
-    margin-top: 110px;
+    margin-top: 60px;
     width: 100%;
 }
+
+.grid img {
+  flex-flow: column wrap;
 }
+
+@media (max-width: 768px) {
+.image{
+  width: 100vw;
+}
+a{
+  font-size:25px;
+  margin: 40.2px;
+}
+h1{
+  font-size:40px; 
+  width:30px;  
+  margin-left: 0.67em;
+  margin-right: 0.67em;
+  display:flex;                                
+}
+}
+@media (min-width: 1000px) {
+  .image{
+    width: 20vw;
+  }
+  }
+
+@media (min-width: 768px) and (max-width: 1700px) {
+  .image{
+    width: 20vw;
+  }
+  }
+  

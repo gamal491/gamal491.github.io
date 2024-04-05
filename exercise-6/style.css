@@ -1,0 +1,57 @@
+@font-face{
+    font-family:Tate-regular;
+    src: url('Tate-regular.otf');
+}
+
+body{
+    background-color: #AD9B6F;
+    font-size:10px;
+}
+
+p{
+    font-size:1.3rem;
+    font-family: Tate-regular;
+    text-align: center;
+    color:white;
+}
+
+.grid{
+    padding:.2rem;
+    display:flow-root;
+
+    margin:2rem;
+    width: 808px;
+    background-color:white;
+    /* position:fixed;
+    transform: translate(-50%,-50%);   */
+}
+.box{
+    display:inline-block;
+    width:200px;
+    /* height:50px; */
+    background-color:#021983;
+}
+
+a:visited{
+    color:white;
+}
+
+.row1{
+    height:120px;
+}
+
+.row2{
+    height:60px;
+}
+
+.row3{
+    height:90px;
+}
+
+.row4{
+    height:220px;
+}
+
+/* .box{
+    transform: rotate(20deg);
+} */
