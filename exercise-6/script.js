@@ -35,3 +35,6 @@ boxes[14].style.transform= `rotate(${degree[Math.floor(Math.random()* degree.len
 boxes[15].style.transform= `rotate(${degree[Math.floor(Math.random()* degree.length)]}deg)`;
 boxes[16].style.transform= `rotate(${degree[Math.floor(Math.random()* degree.length)]}deg)`;
 
+for (let box of boxes) {
+    box.style.backgroundColor
+}
