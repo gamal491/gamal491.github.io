@@ -55,6 +55,7 @@ p{
 
 /*back to main page*/
 .textbox{
+  cursor: pointer;
   justify-content: space-between;
 }
 
@@ -86,7 +87,7 @@ hr {
     width: 50vw;
     height: 100%;
     cursor: pointer;
-    -webkit-filter: saturate(0); 
+    /* -webkit-filter: saturate(0);  */
 
   }
 .image:hover{
