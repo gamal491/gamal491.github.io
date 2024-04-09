@@ -44,7 +44,7 @@ a{
   margin-right: 0.67em;
 }
 
-p{
+.about{
   color: #000;
   font-family: "Tilt Neon";
   font-size: 30px;
@@ -160,4 +160,20 @@ h1{
   font-family:"Tilt Neon";
   font-size:12px;
   margin: 4px 2px;
-}}
+}
+
+.about{
+  color: #000;
+  font-family: "Tilt Neon";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-items: center;
+  justify-content: center;
+  flex-wrap:wrap;
+  margin-left: 0.67em;
+  margin-right: 0.67em;
+}
+
+}
