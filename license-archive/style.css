@@ -91,9 +91,15 @@ hr {
   margin: 4px 2px;
 }
 .button-text{
-  font-size:19px;
-
+  color: #000;
+  font-family: "Tilt Neon";
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  justify-content: center;
 }
+
 .buttons{
   margin-left: 35px;
   margin-right: 30px;
