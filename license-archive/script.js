@@ -1,7 +1,8 @@
 let licensePlates = document.querySelectorAll(".image");
-let myButtons = document.querySelectorAll(".my-button")[0];
+let myButtons = document.querySelectorAll(".my-button");
+// let myButton = document.getElementById("1960");
 
-
+console.log(myButton);
 console.log("hello world!");
 console.log("heloo!");
 
@@ -12,15 +13,9 @@ function show1960() {
        } else {
       licensePlate.style.display = "block";
       }}
-
-    for(myButton of myButtons) {
-        myButton.style.backgroundColor= "#04AA6D";
-    }
 }
 
-
 function show1970() {
-
     for(licensePlate of licensePlates) {
         if (!licensePlate.classList.contains("1970")) {
         licensePlate.style.display = "none";
@@ -31,7 +26,6 @@ function show1970() {
     }
 
 function show1980() {
-
     for(licensePlate of licensePlates) {
         if (!licensePlate.classList.contains("1980")) {
         licensePlate.style.display = "none";
@@ -42,7 +36,6 @@ function show1980() {
     }  
 
 function show1990() {
-
     for(licensePlate of licensePlates) {
         if (!licensePlate.classList.contains("1990")) {
         licensePlate.style.display = "none";
@@ -53,7 +46,6 @@ function show1990() {
 }
 
 function show2000() {
-
     for(licensePlate of licensePlates) {
         if (!licensePlate.classList.contains("2000")) {
         licensePlate.style.display = "none";
@@ -64,7 +56,6 @@ function show2000() {
 }
 
 function show2010() {
-
     for(licensePlate of licensePlates) {
         if (!licensePlate.classList.contains("2010")) {
         licensePlate.style.display = "none";
@@ -75,7 +66,6 @@ function show2010() {
 }
 
 function show2020() {
-
     for(licensePlate of licensePlates) {
         if (!licensePlate.classList.contains("2020")) {
         licensePlate.style.display = "none";
@@ -86,9 +76,25 @@ function show2020() {
     
 }
 
-// function changeBackgroundColor(){
+function showAll() {
+    for(licensePlate of licensePlates) {
+        if (!licensePlate.classList.contains("image")) {
+        licensePlate.style.display = "none";
+        } else {
+        licensePlate.style.display = "block";
+        }
+    }
+    
+}
 
+// function changeBackgroundColor(){
 //     for(myButton of myButtons) {
-//         myButton.style.backgroundColor= "yellow";
+//         myButton.style.backgroundColor= "#04AA6D";
 //     }
+// }
+
+//function to change background color of button
+
+// function changeBackgroundColor(){
+//     myButton.style.backgroundColor = "red";
 // }
