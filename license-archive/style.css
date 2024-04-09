@@ -191,4 +191,8 @@ h1{
   margin-right: 0.67em;
 }
 
+.my-button:focus{
+  background-color: #04AA6D;
+}
+
 }
