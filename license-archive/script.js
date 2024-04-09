@@ -1,20 +1,23 @@
 let licensePlates = document.querySelectorAll(".image");
-let sixtyButton = document.getElementById("my-button");
- 
+let myButtons = document.getElementsByClassName("my-button");
+
 
 console.log("hello world!");
 console.log("heloo!");
 
 function show1960() {
-
     for(licensePlate of licensePlates) {
       if (!licensePlate.classList.contains("1960")) {
        licensePlate.style.display = "none";
        } else {
       licensePlate.style.display = "block";
-      }
+      }}
+
+    for(myButton of myButtons) {
+        myButton.style.backgroundColor= "yellow";
     }
-    }
+}
+
 
 function show1970() {
 
@@ -79,5 +82,13 @@ function show2020() {
         } else {
         licensePlate.style.display = "block";
         }
+    }
+    
+}
+
+function changeBackgroundColor(){
+
+    for(myButton of myButtons) {
+        myButton.style.backgroundColor= "yellow";
     }
 }
