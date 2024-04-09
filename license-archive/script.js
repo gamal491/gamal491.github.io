@@ -1,5 +1,5 @@
 let licensePlates = document.querySelectorAll(".image");
-let myButtons = document.getElementsByClassName("my-button");
+let myButtons = document.querySelectorAll(".my-button")[0];
 
 
 console.log("hello world!");
@@ -14,7 +14,7 @@ function show1960() {
       }}
 
     for(myButton of myButtons) {
-        myButton.style.backgroundColor= "yellow";
+        myButton.style.backgroundColor= "#04AA6D";
     }
 }
 
@@ -86,9 +86,9 @@ function show2020() {
     
 }
 
-function changeBackgroundColor(){
+// function changeBackgroundColor(){
 
-    for(myButton of myButtons) {
-        myButton.style.backgroundColor= "yellow";
-    }
-}
+//     for(myButton of myButtons) {
+//         myButton.style.backgroundColor= "yellow";
+//     }
+// }
