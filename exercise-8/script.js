@@ -51,9 +51,20 @@ clock.innerHTML= currentHour + ":" + currentMinute + ":" + currentSecond;
 
 //move sun to sunrise and sunset
 let sun = document.getElementById("sun");
-let sunRise = map(currentSecond, 0, 59, 15, 90);
+let sunRise 
 console.log(sunRise);
+
+if (currentHour <=11){
+    sunRise = map(currentHour, 0, 11, 0, 100);
+}
+    else if (currenHour >= 12){
+    sunRise = map(currentHour, 12, 23, 100, 0);
+}
+
+
 sun.style.bottom = sunRise + "vh";
+
+
 
 // document.body.style.backgroundColor = "hsl(" + secondsToHue + ", 100%, 53%)";
 
