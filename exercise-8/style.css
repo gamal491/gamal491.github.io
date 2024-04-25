@@ -2,6 +2,11 @@
   font-family: digital;
   src: url(digital-7.ttf);
 }
+
+body{
+  background-image: url("ocean-water.jpg");
+}
+
 #container{
     position: absolute;
     top: 40%;
@@ -16,7 +21,7 @@
   height: 100px;
   background-color: #FFD600;
   border-radius: 100%;
-  mix-blend-mode:darken;
+  mix-blend-mode:hard-light;
   transition: 1000ms linear;
 }
 
@@ -53,4 +58,41 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: -2.1px;
+}
+
+@media (max-width: 768px) {
+  #ocean {
+    height: 271px;
+  }
+
+  #clock {
+    color: white;
+    text-align: center;
+    font-family: "digital";
+    font-size: 42px;
+    letter-spacing: -1.3px;
+  }
+
+  #date{
+    color: white;  
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top:10px;
+    letter-spacing: -1px;
+  }
+
+  #sun{
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-height: 500px) {
+  #ocean {
+    height: 80px;
+  }
 }

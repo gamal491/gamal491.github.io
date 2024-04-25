@@ -51,7 +51,7 @@ clock.innerHTML= currentHour + ":" + currentMinute + ":" + currentSecond;
 
 //move sun to sunrise and sunset
 let sun = document.getElementById("sun");
-let sunRise = map(currentSecond, 0, 59, 10, 90);
+let sunRise = map(currentSecond, 0, 59, 15, 90);
 console.log(sunRise);
 sun.style.bottom = sunRise + "vh";
 
@@ -65,4 +65,5 @@ setInterval(updateTime, 1000);
 function map(value, low1, high1, low2, high2){
     return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
   
-  }
+}
+
