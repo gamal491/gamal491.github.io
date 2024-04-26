@@ -67,15 +67,13 @@ body{
   }
 
   #clock {
-    color: white;
     text-align: center;
     font-family: "digital";
     font-size: 42px;
     letter-spacing: -1.3px;
   }
 
-  #date{
-    color: white;  
+  #date{  
     text-align: center;
     font-family: Helvetica;
     font-size: 15px;
