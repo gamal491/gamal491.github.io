@@ -49,26 +49,28 @@ let clock = document.getElementById("clock");
 clock.innerHTML= currentHour + ":" + currentMinute + ":" + currentSecond;
 
 
-//move sun to sunrise and sunset
+//move sun to sunrise and sunset by hour
 let sun = document.getElementById("sun");
-let sunRise 
-console.log(sunRise);
+let sunByHour 
 
 if (currentHour <=11){
-    sunRise = map(currentHour, 0, 11, 0, 100);
+    sunByHour = map(currentHour, 0, 11, 0, 100);
 }
-    else if (currenHour >= 12){
-    sunRise = map(currentHour, 12, 23, 100, 0);
+    else if (currentHour >= 12){
+    sunByHour = map(currentHour, 12, 23, 100, 0);
+}
+console.log(sunByHour);
+
+sun.style.top = sunByHour + "vh";
+
+//help here
+let hoursToLightness = map(sunByHour, 0, 23, 0, 100);
+console.log(hoursToLightness);
+console.log(currentHour);
+document.body.style.backgroundColor = `<hsl(0, 0%, ${hoursToLightness}%)>`;
+
 }
 
-
-sun.style.bottom = sunRise + "vh";
-
-
-
-// document.body.style.backgroundColor = "hsl(" + secondsToHue + ", 100%, 53%)";
-
-}
 //live update
 setInterval(updateTime, 1000);
 

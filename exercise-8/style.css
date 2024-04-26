@@ -4,7 +4,8 @@
 }
 
 body{
-  background-image: url("ocean-water.jpg");
+  /* background-image: url("ocean-water.jpg"); */
+  /* background-color:hsl(192, 100%, 73%) */
 }
 
 #container{
@@ -96,3 +97,12 @@ body{
     height: 80px;
   }
 }
+
+/*this is epic,, light and dark mode*/
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #101010;}
+  #clock, #date{
+      color: white;
+  }
+  }
