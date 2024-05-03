@@ -1,0 +1,207 @@
+
+#box {
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 32px;
+  }
+
+.nav {
+  position:fixed;
+  right:32px;
+  margin: 0px;
+  width:25px;
+  height:25px;
+  border-radius: 50%;
+  border: solid #000;
+}
+
+.nav a {
+  display: inline-block;
+  position:absolute;
+  right:35%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  /* transition: opacity 0.25s ease-in; */
+  font-family: "HelveticaNeue-CondensedBold";
+  text-decoration:none;
+  color: #000;
+}
+
+.container {
+  position: fixed;
+  width: 1324px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
+h1 {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 34px;
+  letter-spacing: -0.03em;
+  text-align:center;
+}
+
+#clock{
+  color: #000;
+  text-align: center;
+  font-family: "HelveticaNeue-CondensedBold";
+  font-size: 300px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -9px;
+  margin:25px;
+}
+
+#timeofday{
+  color: #000;
+  /* text-align: left; */
+  font-family: "HelveticaNeue-CondensedBold";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.576px;
+  position: absolute;
+  top: 35.0%;
+  left: 23%;
+}
+
+#water{
+  width:100vw;
+  position: fixed;
+  left:50%;
+  margin-left:-50vw;
+  margin-right:-50vw;
+  margin-bottom:-50vh;
+  margin-top:-50vh;
+  bottom:50%;
+  height:100vh; 
+  background-color: #84BAF9;
+  mix-blend-mode:multiply;
+}
+.oz-container{
+  display:none;
+}
+/* buttons*/
+#my-clock{
+  padding-left:75px;
+  padding-right:75px;
+  display:none;
+}
+#my-ounces{
+  width:845px;
+  padding-left:75px;
+  padding-right:75px;
+  padding-top:5px;
+  padding-bottom:5px;
+  border-color: none;
+  border-radius: 50px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about, .about h2 {
+  color: #000000;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 13px;
+}
+.about h2 {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 17px;
+  letter-spacing: -0.03em;
+  /* text-align:center; */
+  float: left;
+  width: 85%;
+}
+
+.about p {
+  font-size: 2.93vw;
+  line-height: 1.21;
+  width: 89%;
+}
+
+
+@media (max-width: 700px) {
+.container {
+  position: fixed;
+  width: 326px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#clock{  
+font-size: 150px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -4.5px;
+}
+
+h1 {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 30px;
+  letter-spacing: -1.8px;
+  text-align:center;
+}
+
+#timeofday{
+  font-family: "HelveticaNeue-CondensedBold";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  top: 48.0%;
+  left: 0%;
+}
+
+#my-ounces{
+  width:326px;
+}
+}
+
+@media (max-width: 280px) {
+.container {
+    position: fixed;
+    width: 280px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #clock{  
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -4.5px;
+  }
+  
+  h1 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 24px;
+    letter-spacing: -1.8px;
+    text-align:center;
+  }
+  
+  #timeofday{
+    font-family: "HelveticaNeue-CondensedBold";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    top: 52.0%;
+    left: 5%;
+  }
+
+  
+}

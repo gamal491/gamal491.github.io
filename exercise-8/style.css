@@ -5,7 +5,7 @@
 
 body{
   /* background-image: url("ocean-water.jpg"); */
-  /* background-color:hsl(192, 100%, 73%) */
+  /* background-color:hsl(0, 0%, 73%) */
 }
 
 #container{
@@ -102,5 +102,7 @@ body{
     background-color: #101010;}
   #clock, #date{
       color: white;
+  }
+  #ocean {mix-blend-mode:color;
   }
   }

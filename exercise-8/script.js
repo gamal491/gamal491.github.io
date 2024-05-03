@@ -60,15 +60,17 @@ if (currentHour <=11){
     sunByHour = map(currentHour, 12, 23, 100, 0);
 }
 console.log(sunByHour);
-
 sun.style.top = sunByHour + "vh";
 
 //help here
-let hoursToLightness = map(sunByHour, 0, 23, 0, 100);
+let hoursToLightness = map(currentHour, 0, 23, 0, 100);
 console.log(hoursToLightness);
 console.log(currentHour);
-document.body.style.backgroundColor = `<hsl(0, 0%, ${hoursToLightness}%)>`;
+// document.body.style.backgroundColor = `hsl(0, 0%, ${hoursToLightness}%)`;
 
+
+let secondsToLightness = map(currentSecond, 0, 59, 0, 100);
+sun.style.backgroundColor = `hsl(0, 0%, ${secondsToLightness}%)`;
 }
 
 //live update
