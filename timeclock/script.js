@@ -54,6 +54,16 @@ clock.innerHTML= currentHour + ":" + currentMinute; //+ ":" + currentSecond;
 
 setInterval(updateTime, 1000);
 
+let about= document.getElementsByClassName("about");
+console.log(about);
+
+function showInfo(){
+  about.style.display="flex";
+}
+
+showInfo();
+
 function map(value, low1, high1, low2, high2){
   return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
 }
+
