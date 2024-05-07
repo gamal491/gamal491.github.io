@@ -10,60 +10,68 @@
 
 <div id="box">
     <input type="button" id= "nav" value="i" onclick="showInfo()">
-    </div>
 </div>
 
+<!--water level-->
 <div id="water"></div>
+
+<!--start of container-->
 <div class="container">
+
     <h1>how much water does lorena drink in a day?</h1>
 
+<!--time box-->
 <section class="time-container show">
     <div id="timeofday"><p></p></div>
     <div id="clock"></div>
 </section>
 
+<!--button(s) for fluid ounces-->
     <div class="button">
         <input type="button" id="my-clock" value="clock" onclick="showTime()">
-        <input type="button" id="my-ounces" value="fl oz" onclick="showOunces()">
+        <input type="button" id="my-ounces" value="fl. oz." onclick="showOunces()">
     </div>
-</div>
+            <!-- <svg class = "svg" width="21" height="34" viewBox="0 0 21 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="Vector 7" d="M2.5 19L9.99932 2L18.9993 20.5C21.9993 26 18.7993 31.7 9.99932 32.5C1.19932 33.3 -0.500049 26.5 2.5 19Z" stroke="black"/>
+            </svg> -->
+    
 
+</div> <!--end of container-->
+
+
+<!--ounces box-->
 <div class="container">
-<section class="oz-container">
+<section class="oz-container show">
     <div id="units"><p></p></div>
     <div id="ounces"></div>
 </section>
+</div>
 
-<section class="about">
-<section>
-    <h2>
-      Clock by the Gallon
-    </h2>
-</section>
-<section>
-<p>
-Clock by the Gallon is an abstract visualization of time through fluid ounces of water. As someone who prioritizes fitness, I made it a goal of mine to drink 1 gallon of water a day, (or 128 fluid ounces.) 
-Through this experiemental study, I aim to keep track of how much water I am drinking throughout the day and simultaneously motivate others to drink their water. 
-</p>
-<p>
-The water level starts at the top of the screen at 12:00:00 AM and lowers by each second of the day, until I have finished my gallon of water.
-To create this each hour, minute, and second are mapped in live time. 
-</section>
+
+<!--information box-->
+<section class="about-container show">
+    <section class="about">
+        
+    <section>   
+        <h2>Clock by the Gallon</h2>
+        <a class="close" href="/timeclock/index.html" title="Close"></a>
+    </section>
+
+    <section>
+        <p>
+        Clock by the Gallon is an abstract visualization of time through fluid ounces of water. As someone who prioritizes fitness, I made it a goal of mine to drink 1 gallon of water a day, (or 128 fluid ounces.) 
+        Through this experiemental study, I aim to keep track of how much water I am drinking throughout the day and simultaneously motivate others to drink their water. 
+        </p>
+        <p>
+        The water level starts at the top of the screen at 12:00:00 AM and lowers by each second of the day, until I have finished my gallon of water.
+        To create this each hour, minute, and second are mapped in live time. 
+    </section>
   
+    </section>
 </section>
  
 
-<!-- 
-<section class="button">
-    <div class="time-button">
-      <div class="ounces-button"></div>
 
-      <a class="time-nav active" href="#" title="Time">Time</a
-      ><a class="ounces-nav" href="#" title="Ounces">Ounces</a>
-    </div>
-  </section> -->
-
-
-    <script src="script.js"></script>  
+<script src="script.js"></script>  
 </body>
 </html>

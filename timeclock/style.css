@@ -17,7 +17,9 @@
   height:25px;
   border-radius: 50%;
   border: solid #000;
-  background-color: none; /* doesn't work*/
+  font-family: "HelveticaNeue-CondensedBold";
+  background-color: transparent; 
+  cursor:pointer;
 }
 
 #nav a {
@@ -84,7 +86,9 @@ h1 {
   bottom:50%;
   height:100vh; 
   background-color: #84BAF9;
-  mix-blend-mode:multiply;
+  mix-blend-mode:multiply; /*this doesn;t work*/
+  transition: 1s linear;
+
 }
 .oz-container{
   display:none;
@@ -107,10 +111,12 @@ h1 {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
+  font-family: "HelveticaNeue-CondensedBold";
 }
 
 .about{
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
@@ -149,6 +155,52 @@ h1 {
   line-height: 1.21;
   width: 89%;
 }
+.close {
+  float: right;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url(close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+  transition: opacity 0.25s ease-in;
+}
+.about-container {
+  z-index: 15;
+  transition: opacity 0.4s ease-in-out;
+}
+.about-container,
+.oz-container {
+  display:none;
+  pointer-events: none;
+  transition: transform 0.5s ease, filter 0.3s linear, opacity 0.25s ease-out;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+  transform: scale(0.9);
+}
+
+.about-container.show,
+.time-container.show,
+.oz-container.show {
+  -webkit-filter: blur(0);
+  -moz-filter: blur(0);
+  -o-filter: blur(0);
+  -ms-filter: blur(0);
+  filter: blur(0);
+  transform: translate3d(0, -1.75vh, 0);
+  opacity: 1;
+  /*transform: scale(1);*/
+}
+.about-container.show {
+  pointer-events: auto;
+  transform: translate3d(0, 0, 0);
+}
+
+
 @media (max-width:1130px){
   .about p {
     font-size: 2vw;

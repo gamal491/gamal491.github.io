@@ -23,15 +23,16 @@ console.log(waterFlow);
 
 water.style.height= 100- waterFlow + "vh";
 
+//done with waterflow
+
 
 if(currentHour > 12) {
     currentHour = currentHour - 12;
   } 
 
-console.log("hello world!")
-
 let currentMinute= today.getMinutes();
 console.log(currentMinute);
+
 //adding a 0 before for min
 if(currentMinute < 10) {
     currentMinute = "0" + currentMinute;
@@ -43,25 +44,43 @@ if(currentSecond < 10) {
     currentSecond = "0" + currentSecond;
   }
 
+// let waterFlow = map(currentSecond, 0, 59, 0, 128);
+// console.log(waterFlow);
+  
+// water.style.height= 100- waterFlow + "vh";
+
+
 let clock = document.getElementById ("clock");
 function showTime(){
   clock.style.display= "block";
 }
-clock.innerHTML= currentHour + ":" + currentMinute; //+ ":" + currentSecond;
+clock.innerHTML= currentHour + ":" + currentMinute;// + ":" + currentSecond;
 
+let about= document.getElementsByClassName("aboutContainer");
+console.log(about);
+
+function showInfo(){
+  aboutContainer.style.display="block";
+}
 
 }
 
 setInterval(updateTime, 1000);
 
-let about= document.getElementsByClassName("about");
-console.log(about);
+let ouncesContainer= document.getElementById("oz-container");
+let timeContainer= document.getElementById("time-container");
 
-function showInfo(){
-  about.style.display="flex";
+console.log("timeContainer");
+function showOunces() {
+  timeContainer.style.display="none";
+  ouncesContainer.style.display="block";
 }
 
-showInfo();
+
+
+
+
+
 
 function map(value, low1, high1, low2, high2){
   return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
