@@ -12,8 +12,7 @@
     <input type="button" id= "nav" value="i" onclick="showInfo()">
 </div>
 
-<!--water level-->
-<div id="water"></div>
+
 
 <!--start of container-->
 <div class="container">
@@ -21,40 +20,43 @@
     <h1>how much water does lorena drink in a day?</h1>
 
 <!--time box-->
-<section class="time-container show">
+<section id="time-container">
     <div id="timeofday"><p></p></div>
     <div id="clock"></div>
 </section>
 
-<!--button(s) for fluid ounces-->
-    <div class="button">
-        <input type="button" id="my-clock" value="clock" onclick="showTime()">
+
+<!--button for fluid ounces-->
+    <div id="button">
         <input type="button" id="my-ounces" value="fl. oz." onclick="showOunces()">
     </div>
-            <!-- <svg class = "svg" width="21" height="34" viewBox="0 0 21 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path id="Vector 7" d="M2.5 19L9.99932 2L18.9993 20.5C21.9993 26 18.7993 31.7 9.99932 32.5C1.19932 33.3 -0.500049 26.5 2.5 19Z" stroke="black"/>
-            </svg> -->
-    
+
+<!--ounces box-->
+<!-- <div class="container"> -->
+
+<section id="oz-container">
+    <div id="units"><p>fl oz</p></div>
+    <div id="ounces"></div>
+</section>
+
+<!--button for time-->
+    <div id="button">
+        <input type="button" id="my-time" value="time" onclick="showTime()">
+    </div>
 
 </div> <!--end of container-->
 
-
-<!--ounces box-->
-<div class="container">
-<section class="oz-container show">
-    <div id="units"><p></p></div>
-    <div id="ounces"></div>
-</section>
-</div>
-
+<!--water level-->
+<div id="water"></div>
 
 <!--information box-->
-<section class="about-container show">
-    <section class="about">
+    <section id="about">
         
     <section>   
         <h2>Clock by the Gallon</h2>
-        <a class="close" href="/timeclock/index.html" title="Close"></a>
+        <!-- <a id="close" title="Close"></a> -->
+        <input type="button" id="close" onclick="closeAbout()">
+
     </section>
 
     <section>
@@ -68,7 +70,6 @@
     </section>
   
     </section>
-</section>
  
 
 

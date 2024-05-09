@@ -20,6 +20,7 @@
   font-family: "HelveticaNeue-CondensedBold";
   background-color: transparent; 
   cursor:pointer;
+
 }
 
 #nav a {
@@ -47,6 +48,7 @@ h1 {
   font-size: 34px;
   letter-spacing: -0.03em;
   text-align:center;
+  mix-blend-mode: hard-light;
 }
 
 #clock{
@@ -59,6 +61,7 @@ h1 {
   line-height: normal;
   letter-spacing: -9px;
   margin:25px;
+  mix-blend-mode: hard-light;
 }
 
 #timeofday{
@@ -75,30 +78,55 @@ h1 {
   left: 23%;
 }
 
-#water{
-  width:100vw;
-  position: fixed;
-  left:50%;
-  margin-left:-50vw;
-  margin-right:-50vw;
-  margin-bottom:-50vh;
-  margin-top:-50vh;
-  bottom:50%;
-  height:100vh; 
-  background-color: #84BAF9;
-  mix-blend-mode:multiply; /*this doesn;t work*/
-  transition: 1s linear;
-
+#ounces{
+  color: #000;
+  text-align: center;
+  font-family: "HelveticaNeue-CondensedBold";
+  font-size: 300px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -9px;
+  margin:25px;
+  mix-blend-mode: hard-light;
 }
-.oz-container{
+
+#units{
+  color: #000;
+  font-family: "HelveticaNeue-CondensedBold";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.576px;
+  position: absolute;
+  top: 35.0%;
+  left: 23%;
+}
+
+#water-container{
+  display:block;
+}
+#oz-container{
   display:none;
 }
 /* buttons*/
-#my-clock{
+#my-time{
+  width:845px;
   padding-left:75px;
   padding-right:75px;
-  display:none;
+  padding-top:5px;
+  padding-bottom:5px;
+  border-color: none;
+  border-radius: 50px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  font-family: "HelveticaNeue-CondensedBold";
 }
+
 #my-ounces{
   width:845px;
   padding-left:75px;
@@ -115,8 +143,22 @@ h1 {
   font-family: "HelveticaNeue-CondensedBold";
 }
 
-.about{
-  display: flex;
+#water{
+  width:100vw;
+  position: fixed;
+  left:50%;
+  margin-left:-50vw;
+  margin-right:-50vw;
+  margin-bottom:-50vh;
+  margin-top:-50vh;
+  bottom:50%;
+  height:100vh; 
+  background-color: #84BAF9;
+  mix-blend-mode:hard-light; /*this doesn;t work*/
+  transition: 1s linear;
+}
+
+#about{
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
@@ -130,18 +172,20 @@ h1 {
   padding-top: 40px;
   
 }
-
-.about section {
+#about{
+  display:none;
+}
+#about section {
   padding: 0 40px;
 }
 
-.about, .about h2 {
+#about, #about h2 {
   color: #000000;
   font-family: 'Helvetica', sans-serif;
   font-size: 13px;
 }
 
-.about h2 {
+#about h2 {
   font-family: 'Helvetica', sans-serif;
   font-size: 2vw;
   letter-spacing: -0.03em;
@@ -150,12 +194,13 @@ h1 {
   width: 70%;
 }
 
-.about p {
+#about p {
+  display:flex;
   font-size: 2vw;
   line-height: 1.21;
   width: 89%;
 }
-.close {
+#close {
   float: right;
   display: inline-block;
   width: 32px;
@@ -164,76 +209,36 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 1;
-  transition: opacity 0.25s ease-in;
-}
-.about-container {
-  z-index: 15;
-  transition: opacity 0.4s ease-in-out;
-}
-.about-container,
-.oz-container {
-  display:none;
-  pointer-events: none;
-  transition: transform 0.5s ease, filter 0.3s linear, opacity 0.25s ease-out;
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: blur(2px);
-  transform: scale(0.9);
-}
-
-.about-container.show,
-.time-container.show,
-.oz-container.show {
-  -webkit-filter: blur(0);
-  -moz-filter: blur(0);
-  -o-filter: blur(0);
-  -ms-filter: blur(0);
-  filter: blur(0);
-  transform: translate3d(0, -1.75vh, 0);
-  opacity: 1;
-  /*transform: scale(1);*/
-}
-.about-container.show {
-  pointer-events: auto;
-  transform: translate3d(0, 0, 0);
+  cursor:pointer;
 }
 
 
 @media (max-width:1130px){
-  .about p {
+  #about p {
     font-size: 2vw;
     line-height: 1.21;
     width: 89%;
   }
-  .about .ref,
-  .about h2 {
+  #about .ref,
+  #about h2 {
     font-size: 2vw;
   }
-  .about h2 {
+  #about h2 {
     padding: 4px 8px 8px 8px;
-  }
-  .about {
-  padding-top: 32px;
-  width:1vw;
-  }
-  .about section {
-    padding: 0 32px;
   }
 }
 
 @media (max-width:1024px){
-.about {
+#about {
     min-height: 50%;
     margin: 12.5vw;
   }
-  .about p {
+  #about p {
     width: 100%;
     font-size: 3.125vw;
     line-height: 1.25;
   }
-  .about h2 {
+  #about h2 {
     padding: 4px 8px 10px 8px;
   }
   }
@@ -277,23 +282,23 @@ h1 {
   width:326px;
 }
 
-.about p {
+#about p {
   font-size: 12px;
   /* line-height: 1.21;
   width: 89%; */
 }
-.about .ref,
-.about h2 {
+#about .ref,
+#about h2 {
   font-size: 12px;
 }
-.about h2 {
+#about h2 {
   font-size: 15px;
   padding: 4px 8px 8px 8px;
 }
-.about {
+#about {
 padding-top: 32px;
 }
-.about section {
+#about section {
   padding: 0 32px;
 }
 }

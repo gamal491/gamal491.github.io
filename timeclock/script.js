@@ -56,33 +56,82 @@ function showTime(){
 }
 clock.innerHTML= currentHour + ":" + currentMinute;// + ":" + currentSecond;
 
-let about= document.getElementsByClassName("aboutContainer");
-console.log(about);
-
-function showInfo(){
-  aboutContainer.style.display="block";
-}
-
 }
 
 setInterval(updateTime, 1000);
+function map(value, low1, high1, low2, high2){
+  return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+}
+//----------------------------------------------
+
+let about= document.getElementById("about");
+console.log(about);
+
+function showInfo(){
+  about.style.display="block";
+} 
+showInfo();
+
+
+let close= document.getElementById("close");
+console.log(close);
+
+function closeAbout(){
+  about.style.display="none";
+}
+closeAbout();
+
+//toggling between time and ounces
 
 let ouncesContainer= document.getElementById("oz-container");
 let timeContainer= document.getElementById("time-container");
+console.log(ouncesContainer);
+console.log(timeContainer);
+let ouncesButton= document.getElementById("my-ounces")
+let timeButton= document.getElementById("my-time")
 
-console.log("timeContainer");
 function showOunces() {
   timeContainer.style.display="none";
   ouncesContainer.style.display="block";
+  ouncesButton.style.display="none";
+  timeButton.style.display="block";
+  }
+
+function showTime() {
+  ouncesContainer.style.display="none";
+  timeContainer.style.display="block";
+  timeButton.style.display="none";
+  ouncesButton.style.display="block";
+  }
+//done
+
+//update fluid ounces
+//------------------------------
+function updateOunces(){
+
+let today = new Date();
+let currentHour= today.getHours();
+
+let ounces= document.getElementById("ounces");
+console.log(ounces);
+
+function showOunces(){
+  ounces.style.display="block";
+}
+// let wholeNumber= Math.floor(map(currentHour, 0, 23, 0, 128));
+ounces.innerHTML= Math.floor(map(currentHour, 0, 23, 0, 128));
+// Math.floor(Math.random()*128);
+
 }
 
-
-
-
+setInterval(updateOunces, 1000);
 
 
 
 function map(value, low1, high1, low2, high2){
   return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
 }
+
+
+
 
