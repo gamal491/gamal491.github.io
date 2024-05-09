@@ -30,6 +30,12 @@ if(currentHour > 12) {
     currentHour = currentHour - 12;
   } 
 
+// if (currentHour = 12 && timeOfDay.innerHTML == "AM"){
+//   currentHour = "12";
+// }
+console.log(currentHour);
+
+
 let currentMinute= today.getMinutes();
 console.log(currentMinute);
 

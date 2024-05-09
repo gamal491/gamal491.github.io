@@ -117,7 +117,7 @@ h1 {
   padding-right:75px;
   padding-top:5px;
   padding-bottom:5px;
-  border-color: none;
+  border-color: black;
   border-radius: 50px;
   background-color: white;
   position: absolute;
@@ -125,6 +125,7 @@ h1 {
   transform: translate(-50%, -50%);
   cursor: pointer;
   font-family: "HelveticaNeue-CondensedBold";
+  display:"block";
 }
 
 #my-ounces{
@@ -133,7 +134,7 @@ h1 {
   padding-right:75px;
   padding-top:5px;
   padding-bottom:5px;
-  border-color: none;
+  border-color: black;
   border-radius: 50px;
   background-color: white;
   position: absolute;
@@ -153,10 +154,13 @@ h1 {
   margin-top:-50vh;
   bottom:50%;
   height:100vh; 
-  background-color: #84BAF9;
+  /* background-color: #84BAF9; */
+  background-color: #96CEF1;
   mix-blend-mode:hard-light; /*this doesn;t work*/
   transition: 1s linear;
 }
+
+
 
 #about{
   flex-direction: column;
@@ -252,7 +256,7 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-#clock{  
+#clock, #ounces{  
 font-size: 150px;
 font-style: normal;
 font-weight: 700;
@@ -267,7 +271,7 @@ h1 {
   text-align:center;
 }
 
-#timeofday{
+#timeofday, #units{
   font-family: "HelveticaNeue-CondensedBold";
   font-size: 15px;
   font-style: normal;
@@ -278,7 +282,7 @@ h1 {
   left: 0%;
 }
 
-#my-ounces{
+#my-ounces, #my-time{
   width:326px;
 }
 
@@ -312,7 +316,7 @@ padding-top: 32px;
     transform: translate(-50%, -50%);
   }
   
-  #clock{  
+  #clock, #ounces{  
   font-size: 120px;
   font-style: normal;
   font-weight: 700;
@@ -327,7 +331,7 @@ padding-top: 32px;
     text-align:center;
   }
   
-  #timeofday{
+  #timeofday, #units{
     font-family: "HelveticaNeue-CondensedBold";
     font-size: 15px;
     font-style: normal;
