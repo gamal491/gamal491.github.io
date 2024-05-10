@@ -26,6 +26,10 @@ body{
   padding: 0;
 }
 
+#nav:visited{
+  color:black;
+}
+
 /* #nav a {
   display: inline-block;
   position:absolute;
