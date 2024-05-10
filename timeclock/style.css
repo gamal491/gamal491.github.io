@@ -251,6 +251,7 @@ p#units-label{
     width: 100%;
   }
   #about h2 {
+    /* padding: 4px 8px 8px 8px; */
     font-size: 2.4vw;
   }
 }
@@ -268,6 +269,14 @@ p#units-label{
   
 
 @media (max-width: 800px) {
+.container {
+  position: fixed;
+  width: 326px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #clock, #ounces{  
 font-size: 150px;
 font-style: normal;
@@ -318,6 +327,11 @@ padding-top: 20px;
 
 #about section {
   padding: 0 20px;
+}
+
+#close{
+  width: 3vw;
+  height: 3vw;
 }
 }
 

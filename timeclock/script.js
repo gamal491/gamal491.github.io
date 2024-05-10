@@ -50,18 +50,12 @@ if(currentSecond < 10) {
     currentSecond = "0" + currentSecond;
   }
 
-// let waterFlow = map(currentSecond, 0, 59, 0, 128);
-// console.log(waterFlow);
-  
-// water.style.height= 100- waterFlow + "vh";
-
 
 let clock = document.getElementById ("clock");
 function showTime(){
   clock.style.display= "block";
 }
-clock.innerHTML= currentHour + ":" + currentMinute;// + ":" + currentSecond;
-
+clock.innerHTML= currentHour + ":" + currentMinute; + ":" + currentSecond;
 }
 
 setInterval(updateTime, 1000);
@@ -128,11 +122,11 @@ function showOunces(){
 }
 // let wholeNumber= Math.floor(map(currentHour, 0, 23, 0, 128));
 ounces.innerHTML= Math.floor(map(currentHour, 0, 23, 0, 128));
-// Math.floor(Math.random()*128);
 
 }
+//varible.toFixed(2); for rounding to 2 decimal points
 
-setInterval(updateOunces, 1000);
+setInterval(updateOunces, 10);
 
 
 
