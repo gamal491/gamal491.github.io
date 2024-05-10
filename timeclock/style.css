@@ -146,6 +146,7 @@ p#units-label{
   font-family: "HelveticaNeue-CondensedBold";
   display:none;
   z-index:2;
+  mix-blend-mode: hard-light;
   /* top:95%; */
 }
 
@@ -164,6 +165,7 @@ p#units-label{
   cursor: pointer;
   font-family: "HelveticaNeue-CondensedBold";
   z-index:2;
+  mix-blend-mode: hard-light;
   /* top:95%; */
 }
 
@@ -201,8 +203,8 @@ p#units-label{
   border:solid #000;
   position: relative;
   padding-top: 40px;
-  
 }
+
 #about{
   display:none;
 }
@@ -231,6 +233,7 @@ p#units-label{
   line-height: 1.21;
   width: 89%;
 }
+
 #close {
   float: right;
   display: inline-block;
@@ -242,6 +245,39 @@ p#units-label{
   opacity: 1;
   cursor:pointer;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0e1111;}
+  #clock, #ounces, #timeofday, #units, h1{
+      color: #fff4e6;
+  }
+  #water {mix-blend-mode:color;
+  }
+  #water{
+    background-color:	#020079;
+  }
+  #my-time, #my-ounces{
+    border-color: #fff4e6;
+    background-color:	#0e1111;
+    color:#fff4e6;
+    mix-blend-mode: soft-light;
+  }
+
+  #my-time:hover, #my-ounces:hover{
+    border-color: #0e1111;
+    background-color:#fff4e6; 
+    color:#0e1111;
+    mix-blend-mode: soft-light;
+  }
+  
+
+  #nav {
+    border-color:  #fff4e6;
+    color:#fff4e6;
+  }
+  }
+
 
 
 @media (max-width:1130px){
