@@ -16,7 +16,7 @@
   width:25px;
   height:25px;
   border-radius: 50%;
-  border: solid #000;
+  border: solid 1px #000;
   font-family: "HelveticaNeue-CondensedBold";
   background-color: transparent; 
   cursor:pointer;
@@ -104,12 +104,18 @@ h1 {
   left: 23%;
 }
 
+p#units-label{
+  margin:0;
+}
+
 #water-container{
   display:block;
 }
-#oz-container{
-  display:none;
+
+#oz-container {
+  display: none;
 }
+
 /* buttons*/
 #my-time{
   width:845px;
@@ -125,7 +131,8 @@ h1 {
   transform: translate(-50%, -50%);
   cursor: pointer;
   font-family: "HelveticaNeue-CondensedBold";
-  display:"block";
+  display:none;
+  z-index:2;
 }
 
 #my-ounces{
@@ -142,6 +149,7 @@ h1 {
   transform: translate(-50%, -50%);
   cursor: pointer;
   font-family: "HelveticaNeue-CondensedBold";
+  z-index:2;
 }
 
 #water{
@@ -158,9 +166,8 @@ h1 {
   background-color: #96CEF1;
   mix-blend-mode:hard-light; /*this doesn;t work*/
   transition: 1s linear;
+  z-index:1;
 }
-
-
 
 #about{
   flex-direction: column;

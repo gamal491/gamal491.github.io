@@ -109,6 +109,8 @@ function showTime() {
   timeButton.style.display="none";
   ouncesButton.style.display="block";
   }
+
+  
 //done
 
 //update fluid ounces
