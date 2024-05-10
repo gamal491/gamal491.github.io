@@ -261,14 +261,14 @@ p#units-label{
     border-color: #fff4e6;
     background-color:	#0e1111;
     color:#fff4e6;
-    mix-blend-mode: soft-light;
+    mix-blend-mode: hard-light;
   }
 
   #my-time:hover, #my-ounces:hover{
     border-color: #0e1111;
     background-color:#fff4e6; 
     color:#0e1111;
-    mix-blend-mode: soft-light;
+    mix-blend-mode: hard-light;
   }
   
 
