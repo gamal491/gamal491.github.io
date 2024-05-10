@@ -3,8 +3,8 @@ console.log(myHeart);
 let bodyElem= document.body;
 
 bodyElem.onmousemove= function(e){
-    myHeart.style.top= e.clientY + "px";
-    myHeart.style.left= e.clientX + "px";
+    myHeart.style.top= e.clientY + 1 + "px";
+    myHeart.style.left= e.clientX +  1 + "px";
 }
 
 bodyElem.onkeydown= function(e){

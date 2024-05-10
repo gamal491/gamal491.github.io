@@ -1,4 +1,7 @@
-
+body{
+  /* background-color:#FAF9F6; */
+  background-color:#fbf7f5;
+}
 #box {
   overflow: hidden;
   width: 100%;
@@ -20,20 +23,20 @@
   font-family: "HelveticaNeue-CondensedBold";
   background-color: transparent; 
   cursor:pointer;
-
+  padding: 0;
 }
 
-#nav a {
+/* #nav a {
   display: inline-block;
   position:absolute;
   right:35%;
   top:50%;
   transform: translate(-50%, -50%);
   /* transition: opacity 0.25s ease-in; */
-  font-family: "HelveticaNeue-CondensedBold";
+  /* font-family: "HelveticaNeue-CondensedBold";
   text-decoration:none;
-  color: #000;
-}
+  color: #000; */
+/* } */
 
 .container {
   position: fixed;
@@ -49,19 +52,21 @@ h1 {
   letter-spacing: -0.03em;
   text-align:center;
   mix-blend-mode: hard-light;
+  top:20%;
 }
 
 #clock{
   color: #000;
   text-align: center;
   font-family: "HelveticaNeue-CondensedBold";
-  font-size: 300px;
+  font-size: 500px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -9px;
   margin:25px;
   mix-blend-mode: hard-light;
+  padding: 0px;
 }
 
 #timeofday{
@@ -75,14 +80,14 @@ h1 {
   letter-spacing: -0.576px;
   position: absolute;
   top: 35.0%;
-  left: 23%;
+  left: 7%;
 }
 
 #ounces{
   color: #000;
   text-align: center;
   font-family: "HelveticaNeue-CondensedBold";
-  font-size: 300px;
+  font-size: 500px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -101,7 +106,7 @@ h1 {
   letter-spacing: -0.576px;
   position: absolute;
   top: 35.0%;
-  left: 23%;
+  left: 7%;
 }
 
 p#units-label{
@@ -125,7 +130,7 @@ p#units-label{
   padding-bottom:5px;
   border-color: black;
   border-radius: 50px;
-  background-color: white;
+  background-color:#fbf7f5;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -133,6 +138,7 @@ p#units-label{
   font-family: "HelveticaNeue-CondensedBold";
   display:none;
   z-index:2;
+  top:95%;
 }
 
 #my-ounces{
@@ -143,13 +149,14 @@ p#units-label{
   padding-bottom:5px;
   border-color: black;
   border-radius: 50px;
-  background-color: white;
+  background-color:#fbf7f5;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
   font-family: "HelveticaNeue-CondensedBold";
   z-index:2;
+  top:95%;
 }
 
 #water{
@@ -291,6 +298,7 @@ h1 {
 
 #my-ounces, #my-time{
   width:326px;
+  top:100%;
 }
 
 #about p {
@@ -348,6 +356,8 @@ padding-top: 32px;
     top: 52.0%;
     left: 5%;
   }
-
+  #my-ounces, #my-time{
+    top:100%;
+  }
   
 }
