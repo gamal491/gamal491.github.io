@@ -64,7 +64,7 @@ h1 {
   font-weight: 700;
   line-height: normal;
   letter-spacing: -9px;
-  margin:25px;
+  margin:25px auto;
   mix-blend-mode: hard-light;
   padding: 0px;
 }
@@ -92,7 +92,7 @@ h1 {
   font-weight: 700;
   line-height: normal;
   letter-spacing: -9px;
-  margin:25px;
+  margin:25px auto;
   mix-blend-mode: hard-light;
 }
 
