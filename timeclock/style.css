@@ -1,6 +1,9 @@
 body{
   /* background-color:#FAF9F6; */
-  background-color:#fbf7f5;
+  /* background-color:#fbf7f5; */
+  /* background-color:#fcfbf7; */
+  background-color:	#fff4e6;
+
 }
 #box {
   overflow: hidden;
@@ -135,7 +138,7 @@ p#units-label{
   padding-bottom:5px;
   border-color: black;
   border-radius: 50px;
-  background-color:#fbf7f5;
+  background-color:	#fff4e6;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -143,7 +146,7 @@ p#units-label{
   font-family: "HelveticaNeue-CondensedBold";
   display:none;
   z-index:2;
-  top:95%;
+  /* top:95%; */
 }
 
 #my-ounces{
@@ -154,14 +157,19 @@ p#units-label{
   padding-bottom:5px;
   border-color: black;
   border-radius: 50px;
-  background-color:#fbf7f5;
+  background-color:	#fff4e6;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
   font-family: "HelveticaNeue-CondensedBold";
   z-index:2;
-  top:95%;
+  /* top:95%; */
+}
+
+#my-time:hover, #my-ounces:hover{
+  background-color:	lightgray;
+  /* color:white; */
 }
 
 #water{
